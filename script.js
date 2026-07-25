@@ -23,3 +23,12 @@ function addToCart(name,price,image){
     localStorage.setItem("cart",JSON.stringify(cart));
     alert("Product added to cart!");
 }
+function openProduct(image,name,price){
+    let product={
+        image:image,
+        name:name,
+        price: price
+    };
+    localSStorage.setItem("product", JSON.stringify(product));
+    window.location.href="sproduct.html";
+}

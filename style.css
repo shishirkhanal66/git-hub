@@ -170,7 +170,7 @@ body{
    #product1 .pro:hover {
     box-shadow: 20px 20px 30px  rgba(0,0,0,0.06);
    }
-   #product .pro img{
+   #product1 .pro img{
     width:100%;
     border-radius:20px;
    }
@@ -178,7 +178,7 @@ body{
     text-align: start;
     padding: 10px 0;
    }
-   product1 .pro .des span{
+   #product1 .pro .des span{
     color: #606063;
     font-size: 12px;
    }
@@ -668,7 +668,7 @@ button.white{
             .footer-bottom p{
                 color:#9aa4b2;
             }
-            .footer -bottom img{
+            .footer-bottom img{
                 width:220;
                 
             }
@@ -933,7 +933,7 @@ button.white{
              } 
              #form-details form button{
                 background-color: #088178;
-                color:#fff;/
+                color:#fff;
              }
              #form-details .people div{
                 padding-bottom:25px;
@@ -1105,7 +1105,7 @@ button.white{
                 margin-bottom:25px;
              }
              #subtotal table td{
-                padding:15px o;
+                padding:15px 0;
                 border-bottom:1px solid #eee;
                 font-size:16px;
              }
@@ -1180,7 +1180,7 @@ button.white{
               }
               #cart tbody tr:hover{
                 transform:translateY(-4px);
-                box-shadow:0 8px 25pxnrgba(0,0,0,.06);
+                box-shadow:0 8px 25px rgba(0,0,0,.06);
               }
               #coupon{
                 padding:30px;
@@ -1247,7 +1247,7 @@ button.white{
                     transform:translateY(0);
                 }
               }
-              #subout button{
+              #subtotal button{
                 box-shadow:0 10px 25px rgba(8,129,120,.25);
               }
               #subtotal button:hover{
@@ -1262,4 +1262,94 @@ button.white{
               #cart-add{
                 padding-top:25px;
                 
+              }
+              @media (max-width: 992px){
+               #header{
+                  padding:15px 30px;
+               }
+               #hero{
+                  padding:o 40px;
+                  height:70vh;
+               }
+               #product1 .pro{
+                  width: 48%;
+               }
+               #feature{
+                  justify-content:center;
+                  gap:20px;
+               }
+               #sm-banner .banner-box{
+                  min-width:100%;
+               }
+               #banner3{
+                  flex-wrap:wrap;
+                  gap:20px;
+               }
+               #banner3 .banner-box{
+                  flex-basis:48%;
+               }
+               .footer-content{
+                  grid-template-columns:repeat(2,1fr);
+               }
+              }
+              @media (max-width:768px){
+               #header{
+                  padding:15px;
+                  flex-direction:column;
+               }
+               #navbar{
+                  flex-wrap:wrap;
+                  justify-content:center;
+                  margin-top:10px;
+               }
+               #hero{
+                  height:70vh;
+                  padding:20px;
+                  text-align:center;
+                  align-items:center;
+               }
+               #hero h1{
+                  font-size:40px;
+               }
+               #hero h2{
+                  font-size:30px;
+               }
+               #hero p{
+                  font-size:16px;
+               }
+               #feature{
+                  justify-content:center;
+               }
+               #feature .fe-box{
+                  width: 45%;
+               }
+               #product1 .pro{
+                  width:100%;
+               }
+               #newsletter{
+                  padding:40px 20px;
+               }
+               #newsletter .form{
+                  width:100%;
+                  margin-top:20px;
+               }
+               #prodetails{
+                  flex-direction:column;
+               }
+               #prodetails .single-pro-image,
+               #prodetails .single-pro-details{
+                  width:100%;
+                  
+               }
+               #contact-details, #form-details, #blog .blog-box{
+                  flex-direction:column;
+                  
+               }
+               #contact-details .details, 
+               #contact-details .map,
+               #blog .blog-img,
+               #blog .blog-details,
+               #form-details form{
+                  width:100%;
+               }
               }

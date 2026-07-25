@@ -29,6 +29,6 @@ function openProduct(image,name,price){
         name:name,
         price: price
     };
-    localSStorage.setItem("product", JSON.stringify(product));
+    localStorage.setItem("product", JSON.stringify(product));
     window.location.href="sproduct.html";
 }

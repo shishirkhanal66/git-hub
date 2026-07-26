@@ -1352,4 +1352,30 @@ button.white{
                #form-details form{
                   width:100%;
                }
+               .footer-content{
+                  grid-template-columns:1fr;
+               }
+              }
+              @media (max-width:480px){
+               #hero h1{
+                  font-size:30px;
+               }
+               #hero h2{
+                  font-size:24px;
+               }
+               #hero h4{
+                  font-size:16px;
+               }
+               #herop{
+                  font-size:14px;
+               }
+               #feature .fe-box{
+                  width:100%;
+               }
+               #banner h2{
+                  font-size:22px;
+               }
+               #banner3 .banner-box{
+                  flex-basis:100%;
+               }
               }

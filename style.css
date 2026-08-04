@@ -554,12 +554,16 @@ button.white{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: flex-start;
+      padding:40px 80px;
+      gap:30px;
      }
      footer .col{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 20px;
+      
      }
      footer .logo{
       margin-bottom: 30px;
@@ -586,12 +590,25 @@ button.white{
       padding-right:4px;
       cursor:pointer;
    }
+      footer .install .row{
+         display: flex;
+         gap:10px;
+      }
       footer .install .row img{
+          width:145px;
+          height:50px;
+          object-fit: contain;
           border: 1px solid #088178;
           border-radius: 6px;
       }
-      footer .install img{
-         margin:10px 0 15px 0;
+      footer .install  img{
+         width: 220px;
+         height: auto;
+         margin-top: 10px;
+      }
+      footer .col img:first-child{
+         width: 120px;
+         margin-bottom: 25px;
       }
       footer .follow i:hover,
       footer a:hover{

@@ -51,8 +51,8 @@
             
             <div class="single-pro-details">
                 <h6>Home / T-Shirt</h6>
-                <h4 >Men's Fashion T Shirt</h4 id="productPrice">
-                <h2 id="productPrice">$140.00</h2>
+                <h4 id="productPrice">Men's Fashion T Shirt</h4 id="productPrice">
+                <h2>$140.00</h2>
                 <select >
                     <option>Select Size</option>
                     <option>XL</option>
@@ -62,7 +62,7 @@
                 </select>
                 <input type="number" value="1">
                 <button class="normal" onclick="addToCart()">Add To Cart</button>
-                <h4 >Product Details</h4 id="productPrice">
+                <h4 id="productPrice">Product Details</h4 id="productPrice">
                 <span>This Men's Classic Black T-Shirt is made from premium-quality, breathable cotton for all-day comfort.
                 It features a timeless round neck and short sleeves with a regular fit.
                 The soft fabric feels gentle on the skin and ensures maximum comfort.
@@ -85,7 +85,7 @@
                 <img src="yooo.avif"  alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5 >Brown new drop shoulder plain T-shirt</h5 >
+                    <h5 id="productName">Brown new drop shoulder plain T-shirt</h5 id="productName">
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -94,7 +94,7 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h4>$77</h4 id="productPrice">
+                    <h4 id="productPrice">$77</h4 id="productPrice">
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -102,7 +102,7 @@
                 <img src="tyo.avif"  alt="">
                 <div class="des">
                     <span>Nike</span>
-                    <h5 >Summer men T-shirt ( black,white)</h5 >
+                    <h5 id="productName">Summer men T-shirt ( black,white)</h5 id="productName">
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -118,7 +118,7 @@
                 <img src="hehe.avif"  alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5 >Sport inner compression</h5 >
+                    <h5 id="productName">Sport inner compression</h5 id="productName">
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -134,7 +134,7 @@
                 <img src="print.avif" alt="">
                 <div class="des">
                     <span>Puma</span>
-                    <h5 >Floral Printed Half Shirt For Men</h5 >
+                    <h5 id="productName">Floral Printed Half Shirt For Men</h5 id="productName">
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -150,7 +150,7 @@
                 <img src="rose.avif"  alt="">
                 <div class="des">
                     <span>Nike</span>
-                    <h5 >Classic Blue Rose Printed shirt</h5 >
+                    <h5 id="productName">Classic Blue Rose Printed shirt</h5 id="productName">
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -166,7 +166,7 @@
                 <img src="formal.avif" alt="" >
                 <div class="des">
                     <span>adidas</span>
-                    <h5 >New Formal & Casual Lining Shirt</h5 >
+                    <h5 id="productName">New Formal & Casual Lining Shirt</h5 id="productName">
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -255,11 +255,17 @@
                     MainImg.src = this.src;
                 };
               }
-              
+              var MainImg = document.getElementById("MainImg");
+              var smalling = document.getElementByClassName("small-img");
+              for(let i=0; i<smalling.length;i++){
+                smalling[i].onclick=function(){
+                    MainImg.src=this.src;
+                };
+              }
               let product=JSON.parse(localStorage.getItem("product"));
               if(product){
                 document.getElementById("MainImg").src=product.image;
-                document.getElementBy).innerHTML = product.name;
+                document.getElementById("productName").innerHTML = product.name;
                 document.getElementById("productPrice").innerHTML = "$" + product.price;
               }
             </script>

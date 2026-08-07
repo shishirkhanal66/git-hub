@@ -423,6 +423,13 @@ button.normal{
     
 
 }
+ #banner3 .banner-box2{
+    background-image: url("banner8.jpg");   
+}
+
+#banner3 .banner-box3{
+    background-image: url("nnn.png");   
+}
 #sm-banner .h4{
     color: #fff;
     font: size 20px;
@@ -459,6 +466,9 @@ button.white{
     background-image:url("poki_banner_1600x800.png") ;
     border-image-width: 100%;
     
+}
+#sm-banner .banner-box3{
+   background-image: url("nnn.png");
 }
 #banner3{
     padding:80px;

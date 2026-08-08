@@ -822,13 +822,16 @@ button.white{
           }
           #contact-details {
             display:flex;
-            align-items:center;
+            align-items:flex-start;
             justify-content:space-between;
+            gap:40px;
+            flex-wrap:wrap;
              }
              #contact-details .details{
-                width: 40%;
+                width: 45%;
+                min-width: 300px;
              }
-             #contact-details .details span, 
+             #contact-details .details span,
              #form-details form span
              {
                 font-size:12px;
@@ -844,36 +847,81 @@ button.white{
                 font-size: 16px;
                 padding-bottom:15px;
              }
-             #contact-details .details li{
+             #contact-details .details .contact-list{
                 list-style:none;
+                margin: 0 0 20px;
+                padding: 0;
+             }
+             #contact-details .details .contact-list li{
                 display: flex;
                 padding:10px 0;
              }
-             #contact-details .details li i{
+             #contact-details .details .contact-list li i{
                 font-size:14px;
                 padding-right:22px;
+                color:#088178;
              }
-             #contact-details .details li p{
+             #contact-details .details .contact-list li p{
                 margin:0;
                 font-size: 14px;
              }
+             #contact-details .details .ceo-card{
+                padding: 20px;
+                border: 1px solid #e1e1e1;
+                border-left: 4px solid #088178;
+                border-radius: 12px;
+                background: #f8fffe;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+             }
+             #contact-details .details .ceo-card h3{
+                font-size: 18px;
+                padding-bottom: 10px;
+             }
+             #contact-details .details .ceo-card p{
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 10px;
+             }
+             #contact-details .details .ceo-card .ceo-contact p{
+                margin-bottom: 6px;
+             }
+             #contact-details .details .ceo-card .ceo-button{
+                display: inline-block;
+                margin-top: 8px;
+                padding: 12px 24px;
+                background: #088178;
+                color: #fff;
+                border-radius: 10px;
+                text-decoration: none;
+                font-weight: 600;
+             }
+             #contact-details .details .ceo-card .ceo-button:hover{
+                background: #066a63;
+             }
              #contact-details .map{
-                width:55%;
+                width:50%;
+                min-width: 300px;
                 height:400px;
              }
              #contact-details .map iframe{
                 width:100%;
                 height:100%;
+                border-radius: 12px;
              }
              #form-details {
                 display:flex;
                 justify-content: space-between;
+                align-items:flex-start;
+                gap:30px;
                 margin: 30px;
                 padding:80px;
                 border:1px solid #e1e1e1;
+                background:#fafafa;
+                flex-wrap:wrap;
              }
              #form-details form{
-                width:65%;
+                width:60%;
+                min-width: 300px;
                 display:flex;
                 flex-direction: column;
                 align-items:flex-start;
@@ -885,30 +933,46 @@ button.white{
                 padding:12px 15px;
                 outline:none;
                 margin-bottom:20px;
-               border: 1px solid #e1e1e1;
+                border: 1px solid #e1e1e1;
+                border-radius: 8px;
 
-             } 
+             }
              #form-details form button{
                 background-color: #088178;
                 color:#fff;
              }
-             #form-details .people div{
-                padding-bottom:25px;
+             #form-details .people{
+                width:35%;
+                min-width: 280px;
                 display:flex;
-                align-items:center;
+                flex-direction:column;
+                gap:12px;
              }
-             #form-details .people div img{
+             #form-details .people h3{
+                font-size: 18px;
+                margin-bottom: 6px;
+             }
+             #form-details .people .people-card{
+                padding: 16px;
+                background:#fff;
+                border: 1px solid #e1e1e1;
+                border-radius: 12px;
+                display:flex;
+                align-items:flex-start;
+             }
+             #form-details .people .people-card img{
                 width: 65px;
                 height: 65px;
                 object-fit: cover;
                 margin-right: 15px;
+                border-radius: 50%;
              }
-             #form-details .people div p{
-             margin:0;
-             font-size:13px;
-             line-height:25px;
+             #form-details .people .people-card p{
+                margin:0;
+                font-size:13px;
+                line-height:22px;
              }
-             #form-details .people div p span{
+             #form-details .people .people-card p span{
                 display: block;
                 font-size:16px;
                 font-weight:600;
